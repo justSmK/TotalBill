@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0F38FF2A82AAD2005915BB /* TotalBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F38FE2A82AAD2005915BB /* TotalBillView.swift */; };
+		BB0F39012A82ADA1005915BB /* PersonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F39002A82ADA1005915BB /* PersonsView.swift */; };
 		BB2804422A82A83A004AA657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2804412A82A83A004AA657 /* AppDelegate.swift */; };
 		BB2804442A82A83A004AA657 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2804432A82A83A004AA657 /* SceneDelegate.swift */; };
 		BB2804462A82A83A004AA657 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2804452A82A83A004AA657 /* MainViewController.swift */; };
 		BB28044B2A82A83B004AA657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB28044A2A82A83B004AA657 /* Assets.xcassets */; };
 		BB28044E2A82A83B004AA657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB28044C2A82A83B004AA657 /* LaunchScreen.storyboard */; };
+		BBD862182A82B2970073EEA5 /* TipsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD862172A82B2970073EEA5 /* TipsCollectionView.swift */; };
+		BBD8621A2A82BECD0073EEA5 /* TipsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD862192A82BECD0073EEA5 /* TipsCollectionViewCell.swift */; };
+		BBD862202A82BFAA0073EEA5 /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD8621F2A82BFAA0073EEA5 /* TipsView.swift */; };
+		BBD862222A82DB040073EEA5 /* TipsCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD862212A82DB040073EEA5 /* TipsCollectionViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB0F38FE2A82AAD2005915BB /* TotalBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalBillView.swift; sourceTree = "<group>"; };
+		BB0F39002A82ADA1005915BB /* PersonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsView.swift; sourceTree = "<group>"; };
 		BB28043E2A82A83A004AA657 /* TotalBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotalBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2804412A82A83A004AA657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB2804432A82A83A004AA657 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +30,10 @@
 		BB28044A2A82A83B004AA657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB28044D2A82A83B004AA657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB28044F2A82A83B004AA657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBD862172A82B2970073EEA5 /* TipsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCollectionView.swift; sourceTree = "<group>"; };
+		BBD862192A82BECD0073EEA5 /* TipsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCollectionViewCell.swift; sourceTree = "<group>"; };
+		BBD8621F2A82BFAA0073EEA5 /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		BBD862212A82DB040073EEA5 /* TipsCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCollectionViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,52 @@
 		BB2804402A82A83A004AA657 /* TotalBill */ = {
 			isa = PBXGroup;
 			children = (
-				BB2804412A82A83A004AA657 /* AppDelegate.swift */,
-				BB2804432A82A83A004AA657 /* SceneDelegate.swift */,
-				BB2804452A82A83A004AA657 /* MainViewController.swift */,
+				BBD8621B2A82BED70073EEA5 /* Application */,
+				BBD8621C2A82BEE00073EEA5 /* Controllers */,
+				BBD8621D2A82BEF40073EEA5 /* Views */,
 				BB28044A2A82A83B004AA657 /* Assets.xcassets */,
 				BB28044C2A82A83B004AA657 /* LaunchScreen.storyboard */,
 				BB28044F2A82A83B004AA657 /* Info.plist */,
 			);
 			path = TotalBill;
+			sourceTree = "<group>";
+		};
+		BBD8621B2A82BED70073EEA5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BB2804412A82A83A004AA657 /* AppDelegate.swift */,
+				BB2804432A82A83A004AA657 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BBD8621C2A82BEE00073EEA5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB2804452A82A83A004AA657 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BBD8621D2A82BEF40073EEA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBD862172A82B2970073EEA5 /* TipsCollectionView.swift */,
+				BBD862212A82DB040073EEA5 /* TipsCollectionViewDelegate.swift */,
+				BBD8621E2A82BEFE0073EEA5 /* Cells */,
+				BB0F38FE2A82AAD2005915BB /* TotalBillView.swift */,
+				BB0F39002A82ADA1005915BB /* PersonsView.swift */,
+				BBD8621F2A82BFAA0073EEA5 /* TipsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BBD8621E2A82BEFE0073EEA5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BBD862192A82BECD0073EEA5 /* TipsCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0F38FF2A82AAD2005915BB /* TotalBillView.swift in Sources */,
+				BB0F39012A82ADA1005915BB /* PersonsView.swift in Sources */,
+				BBD862182A82B2970073EEA5 /* TipsCollectionView.swift in Sources */,
 				BB2804462A82A83A004AA657 /* MainViewController.swift in Sources */,
+				BBD862222A82DB040073EEA5 /* TipsCollectionViewDelegate.swift in Sources */,
+				BBD862202A82BFAA0073EEA5 /* TipsView.swift in Sources */,
+				BBD8621A2A82BECD0073EEA5 /* TipsCollectionViewCell.swift in Sources */,
 				BB2804422A82A83A004AA657 /* AppDelegate.swift in Sources */,
 				BB2804442A82A83A004AA657 /* SceneDelegate.swift in Sources */,
 			);
